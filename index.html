@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <style>
+
+
+      body {
+        padding-left: 15%;
+        padding-right: 13%;
+        background-color: #ADD8E6;
+        font-family: sans-serif;
+      }
+
+      label {
+        font-size: 15px;
+      }
+
+      form {
+        background-color: #CC0000;
+        background-color-opacity: 20%;
+        padding: 16px 16px 16px 16px
+
+      }
+
+      textarea {
+        display: block;
+      }
+
+      comments {
+        width: 400px;
+      }
+
+
+      #button-area {
+        background-color: #FFA07A;
+        padding: 1%;
+        border-radius: 15px 50px 30px 5px;
+      }
+
+
+      }
+
+      input[type=checkbox]:not(old) + label span,
+      input[type=radio   ]:not(old) + label {
+        display      : inline-block;
+        margin-left  : -28px;
+        padding-left : 28px;
+      }
+
+    </style>
+  </head>
+
+
+  <body>
+    <h1 id="title">Census of Population 2021</h1>
+    <p id="description">
+      This is a short form Census Survey
+    </p>
+    <form id="survey-form">
+
+      <div id="button-area">
+      <label id="name-label">First name:</label>
+      <input type="text" name="name" id="name" required placeholder="First Name"></input><br>
+      <label id="name1-label">Last name:</label>
+      <input type="text" name="name1" id="name1" required placeholder="Last Name"></input><br>
+      <label id="email-label">Email:</label>
+      <input type="email" name="name" id="email" required placeholder="Email Address"></input><br>
+      <label id="number-label">Age:</label>
+      <input type="number" name="Age" id="number" min="0" max=150 required placeholder="Age"></input><br>
+        <label for="province">Province of Residence:</label>
+          <select id="dropdown" name="province">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="British Colombia">British Colombia</option>
+            <option value="Alberta">Alberta</option>
+            <option value="Manitoba">Manitoba</option>
+            <option value="Skaskatchewan">Skaskatchewan</option>
+            <option value="Ontario">Ontario</option>
+            <option value="Quebec">Quebec</option>
+            <option value="New Brunswick">New Brunswick</option>
+            <option value="Nova Scotia">Nova Scotia</option>
+            <option value="Prince Edward Island">Prince Edward Island</option>
+            <option value="New Foundland and Labrador">New Foundland and Labrador</option>
+            <option value="Yukon">Yukon</option>
+            <option value="Northwest Territories">Northwest Territories</option>
+            <option value="Nunavut">Nunavut</option>
+          </select>
+      <label id="minicupality-label">City:</label>
+      <input type="text" name="City" id="City" required placeholder="City or Town"></input><br>
+
+      <label id="street-label">Street Name:</label>
+      <input type="text" name="street" id="street" required placeholder="Enter Street Name"></input>
+      <label id="house-label">House or Building Number:</label>
+      <input type="text" name="house" id="house" required placeholder="Enter House Number"></input>
+      <label id="unit-label">Unit Number:</label>
+      <input type="text" name="unit" id="unit" required placeholder="Enter Unit Number"></input><br>
+      <label id="postal-label">Postal Code:</label>
+      <input type="text" name="postal" id="postal" required placeholder="Enter Postal Code"></input><br>
+    </div>
+
+      <br>
+
+      <div id="button-area">
+      <label id="gender-label">Select your sex at birth:</label><br><br>
+        <input type="radio"  class="radio-inline" name="gender" value="male"> Male<br>
+        <input type="radio"  class="radio-inline" name="gender" value="female"> Female<br>
+      </div>
+      <br>
+
+      <div id="button-area">
+      <label id="minicupality-label">Here are a list of races, select those that apply to you:</label><br><br>
+      <input type="checkbox" id="aboriginal" name="aboriginal" value="aboriginal">
+      <label for="race1"> Aboriginal</label><br>
+      <input type="checkbox" id="white" name="white" value="white">
+      <label for="race2"> White</label><br>
+      <input type="checkbox" id="black" name="black" value="black">
+      <label for="race3"> Black</label><br>
+      <input type="checkbox" id="east asian" name="east asian" value="east asian">
+      <label for="race4"> East Asian</label><br>
+      <input type="checkbox" id="south asian" name="south asian" value="south asian">
+      <label for="race5"> South Asian</label><br>
+      <input type="checkbox" id="southeast asian" name="southeast asian" value="southeast asian">
+      <label for="race6"> Southeast Asian</label><br>
+      <input type="checkbox" id="filipino" name="filipino" value="filipino">
+      <label for="race7"> Filipino</label><br>
+      <input type="checkbox" id="latin american" name="latin american" value="latin american">
+      <label for="race8"> Latin American</label><br>
+      <input type="checkbox" id="arab" name="arab" value="arab">
+      <label for="race9"> Arab</label><br>
+    </div>
+      <br>
+
+      <div id="button-area">
+      <label id="minicupality-label">Do you speak English or French well enough to conduct a conversation?</label><br>
+      <input type="checkbox" id="english" name="english" value="english">
+      <label for="language1"> English</label><br>
+      <input type="checkbox" id="french" name="french" value="french">
+      <label for="language2"> French</label><br>
+    </div>
+      <br>
+      <div id="button-area">
+      <label id="minicupality-label">Do you speak a language other than English and French?</label><br>
+
+      <br>
+
+      <input type="checkbox" id="none" name="none" value="none">
+      <label for="language1"> None</label><br>
+
+
+
+      <p id="or">
+        OR
+      </p
+
+      <br>
+
+      <label id="language-label"></label>
+      <input type="text" name="language" id="language" required placeholder="List Language Here"></input><br>
+      <label id="language-label"></label>
+      <input type="text" name="language" id="language" required placeholder="List Language Here"></input><br>
+      <label id="language-label"></label>
+      <input type="text" name="language" id="language" required placeholder="List Language Here"></input><br>
+      <label id="language-label"></label>
+      <input type="text" name="language" id="language" required placeholder="List Language Here"></input><br>
+      <label id="name-label"></label>
+      <input type="text" name="language" id="language" required placeholder="List Language Here"></input><br>
+    </div>
+      <br>
+
+    <div id="button-area">
+      <label id="highschool-label">Have you ever received a high school dimploma or equivilency?</label><br>
+      <br>
+        <input type="radio"  class="radio-inline"  name="highschool" value="High School Diploma"> High School Diploma<br>
+        <input type="radio"  class="radio-inline" name="highschool" value="High School Equivilency Diploma"> High School Equivilency Diploma<br>
+        <input type="radio"  class="radio-inline" name="highschool" value="None"> None<br>
+      </div>
+      <br>
+
+<div id="button-area">
+      <label id="tradeschool-label">Have you ever completed a registered trades program, apprentinceship or proffesional training program?</label><br><br>
+
+      <input type="checkbox" id="trade1" name="trade1" value="trade1">
+      <label for="trade1"> Registered trades program, apprentinceship or proffesional training program of 1-3 months</label><br>
+      <input type="checkbox" id="trade2" name="trade2" value="trade2">
+            <label for="trade2"> Registered trades program, apprentinceship or proffesional training program of 4-12 months</label><br>
+      <input type="checkbox" id="trade3" name="trade3" value="trade3">
+      <label for="trade3"> Registered trades program, apprentinceship or proffesional training program of 1-2 years</label><br>
+      <input type="checkbox" id="trade4" name="trade4" value="trade4">
+      <label for="trade4"> Registered trades program, apprentinceship or proffesional training program of more than 2 years</label><br>
+</div>
+      <br>
+
+<div id="button-area">
+      <label id="college-label">Have you ever completed a college, CEGEP or other non university degree, certificate or diploma?</label><br><br>
+
+      <input type="checkbox" id="trade1" name="trade1" value="trade1">
+      <label for="trade1"> College, CEGEP or other non-university degree, certificate or diploma of less than 1 year</label><br>
+      <input type="checkbox" id="trade2" name="trade2" value="trade2">
+      <label for="trade3"> College, CEGEP or other non-university degree, certificate or diploma of 1-2 years</label><br>
+      <input type="checkbox" id="trade3" name="trade3" value="trade3">
+      <label for="trade4"> College, CEGEP or other non-university degree, certificate or diploma of more than 2 years</label><br>
+      <br>
+</div>
+
+<div id="button-area">
+      <label id="university-label">Have you ever completed a university certificate or degree?</label><br><br>
+
+      <input type="checkbox" id="undercert" name="undercert" value="undercert">
+      <label for="undercert"> Undergraduate Certificate</label><br>
+      <input type="checkbox" id="underdip" name="underdip" value="underdip">
+      <label for="underdip"> Undergraduate Diploma</label><br>
+      <input type="checkbox" id="associate" name="associate" value="associate">
+      <label for="associate"> Associate Degree</label><br>
+      <input type="checkbox" id="bachelor" name="bachelor" value="bachelor">
+      <label for="bachelor"> Bachelor's Degree</label><br>
+
+      <input type="checkbox" id="postbacc" name="postbacc" value="postbacc">
+      <label for="postbacc"> Post-Baccalaureate Certificate</label><br>
+      <input type="checkbox" id="graduates" name="graduates" value="graduates">
+      <label for="graduates"> Graduate Degree</label><br>
+      <input type="checkbox" id="master" name="master" value="master">
+      <label for="master"> Master's Degree</label><br>
+      <input type="checkbox" id="postmast" name="postmast" value="postmast">
+      <label for="postmast"> Post-Master's Certificate</label><br>
+      <input type="checkbox" id="doctorate" name="doctorate" value="doctorate">
+      <label for="doctorate"> Doctorate Degree</label><br>
+</div>
+      <br>
+
+<div id="button-area">
+      <label id="schooling-label">Since September 2020 have you attended a school such as high school, college/CEGEP or university?</label><br>
+
+      <br>
+        <input type="radio"  name="schooling" value="Yes"> Yes<br>
+        <input type="radio"  name="schooling" value="No"> No<br>
+</div>
+      <br>
+      <br>
+<div id="button-area">
+  <label id="comment-label">If you have any feedback, comments or suggestions type them below:</label><br><br>
+      <textarea class="form-control" style=" min-width:500px; max-width:100%;min-height:50px;height:100%;width:99.2%;" placeholder="Comments"></textarea>
+      <input type="submit" id="submit">
+</div>
+
+  </form>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
